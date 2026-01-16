@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: theme("colors.background");
+  font-synthesis: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: theme("fontFamily.sans");
+  background: theme("colors.background");
+  color: #f5f6fa;
+}
+
+::selection {
+  background: rgba(108, 92, 231, 0.3);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f5f6fa;
+  -webkit-box-shadow: 0 0 0px 1000px theme("colors.surface") inset;
+}
